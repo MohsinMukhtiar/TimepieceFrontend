@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/admin.css";
+import "../styles/Admin.css";
 
 const API_URL = "https://timepiece-production.up.railway.app/api/products";
 const LOGIN_URL = "https://timepiece-production.up.railway.app/api/admin/login";
@@ -698,4 +698,5 @@ function renderPageNumbers(currentPage, totalPages, goToPage) {
     );
   });
 }
+
 
