@@ -12,7 +12,7 @@ import About from "./src/components/About";
 import Contact from "./src/components/Cotact";
 import Admin from "./src/components/Admin";
 
-import "../Frontend/src/index.css";
+import "./Frontend/src/index.css";
 
 export default function App() {
    function Home() {
