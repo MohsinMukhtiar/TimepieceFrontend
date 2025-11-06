@@ -5,10 +5,11 @@ export default function CTA() {
   return (
     <section
       style={{
-         color: "black",
+        background: "#f8f8f8",
+        color: "black",
         textAlign: "center",
         padding: "4rem 2rem",
-        borderTop: "1px solid rgba(255, 255, 255, 0.1)",
+        borderTop: "1px solid rgba(0, 0, 0, 0.1)",
       }}
     >
       <div style={{ maxWidth: "700px", margin: "0 auto" }}>
@@ -17,7 +18,7 @@ export default function CTA() {
             fontSize: "2rem",
             fontWeight: "700",
             marginBottom: "1rem",
-            color: "#fff",
+            color: "black",
           }}
         >
           Ready to Find Your Perfect Watch?
@@ -28,7 +29,7 @@ export default function CTA() {
             fontSize: "1.1rem",
             lineHeight: "1.8",
             marginBottom: "2rem",
-            color: "#dcdcdc",
+            color: "black",
           }}
         >
           Discover timepieces that go beyond trends — crafted for those who value
@@ -70,6 +71,3 @@ export default function CTA() {
     </section>
   );
 }
-
-
-
