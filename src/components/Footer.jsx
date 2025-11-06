@@ -2,9 +2,7 @@ import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
-  FaLinkedinIn,
-  FaYoutube,
-  FaTiktok,
+    FaTiktok,
 } from "react-icons/fa";
 
 export default function Footer() {
@@ -49,26 +47,9 @@ export default function Footer() {
             <FaInstagram />
           </a>
 
-          <a
-            href="https://www.linkedin.com/company/hourmetric"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
-            style={{ ...styles.iconLink, color: "#0077B5" }} // LinkedIn Blue
-          >
-            <FaLinkedinIn />
-          </a>
-
-          <a
-            href="https://www.youtube.com/@hourmetric"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="YouTube"
-            style={{ ...styles.iconLink, color: "#FF0000" }} // YouTube Red
-          >
-            <FaYoutube />
-          </a>
-
+           
+  
+ 
           <a
             href="https://www.tiktok.com/@hourmetric"
             target="_blank"
@@ -119,4 +100,5 @@ export default function Footer() {
     transition: "transform 0.3s ease, opacity 0.3s ease",
   },
 };
+
 
