@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import logo from "../assets/1000119615-min.png";
+import logo from "../assets/logo (2).png";
 import "./Navbar.css";
 
 export default function Navbar() {
@@ -142,3 +142,4 @@ export default function Navbar() {
     </header>
   );
 }
+
