@@ -2,10 +2,10 @@ import React from "react";
 import {
   FaFacebookF,
   FaInstagram,
-   FaLinkedinIn,
+  FaLinkedinIn,
   FaYoutube,
   FaTiktok,
- } from "react-icons/fa";
+} from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
       <div style={styles.container}>
         {/* Brand Info */}
         <h3 style={styles.title}>
-          © {new Date().getFullYear()} <strong>Timepiece25.pk</strong>. Premium watches for every occasion.
+          © {new Date().getFullYear()} <strong>Hour Metric</strong>. Time is your greatest asset.
         </h3>
         <p style={styles.credit}>
           Website Designed &amp; Developed by{" "}
@@ -30,7 +30,7 @@ export default function Footer() {
         {/* Social Media Icons */}
         <div style={styles.socialContainer}>
           <a
-            href="https://www.facebook.com/timepiece25.pk"
+            href="https://www.facebook.com/hourmetric"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -40,7 +40,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.instagram.com/timepiece25.pk"
+            href="https://www.instagram.com/hourmetric"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -49,13 +49,28 @@ export default function Footer() {
             <FaInstagram />
           </a>
 
-         
-
-     
+          <a
+            href="https://www.linkedin.com/company/hourmetric"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            style={{ ...styles.iconLink, color: "#0077B5" }} // LinkedIn Blue
+          >
+            <FaLinkedinIn />
+          </a>
 
           <a
-            href="https://www.tiktok.com/@timepiece25.pk
-"
+            href="https://www.youtube.com/@hourmetric"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+            style={{ ...styles.iconLink, color: "#FF0000" }} // YouTube Red
+          >
+            <FaYoutube />
+          </a>
+
+          <a
+            href="https://www.tiktok.com/@hourmetric"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
@@ -63,9 +78,7 @@ export default function Footer() {
           >
             <FaTiktok />
           </a>
-
-          
-         </div>
+        </div>
       </div>
     </footer>
   );
@@ -93,7 +106,7 @@ const styles = {
     marginBottom: "20px",
   },
   link: {
-    color: "#e0b241",  
+    color: "#e0b241",
     textDecoration: "none",
     fontWeight: "bold",
   },
