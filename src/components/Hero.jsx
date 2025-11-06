@@ -2,8 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Hero.css"; // make sure this file includes the hero background
 import img1 from "../assets/logo (2).png"; // image still imported for build bundling
-import img2 from "../assets/cover.png";
-const WHATSAPP_NUMBER = "+923012119368";
+ const WHATSAPP_NUMBER = "+923012119368";
 
 export default function Hero() {
   const whatsappLink = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
@@ -62,4 +61,5 @@ export default function Hero() {
     </div>
   );
 }
+
 
