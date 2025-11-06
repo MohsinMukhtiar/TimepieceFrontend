@@ -8,6 +8,9 @@ export default function CTA() {
         <h2>Ready to Find Your Perfect Watch?</h2>
         <p>
           Browse our collection or reach out directly for personalized assistance.
+         ⌚️ Where Time Meets Style
+💎 Luxury Reimagined — Watches & Clothing
+✉️ DM to Enquire | 🌍 Worldwide Shipping Soon...
         </p>
         <Link
           to="/products"
@@ -20,3 +23,4 @@ export default function CTA() {
     </section>
   );
 }
+
