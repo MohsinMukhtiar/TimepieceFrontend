@@ -5,19 +5,21 @@ const About = () => {
   return (
     <div className="about-root">
       <div className="about-container">
-        <h1 className="about-title">About Us</h1>
+        <h1 className="about-title">About Hour Metric</h1>
+        <p className="about-slogan">"Time is your greatest asset."</p>
 
         <div className="about-content">
           <p>
-            Welcome to our premium watch collection. We are dedicated to bringing you the finest
-            timepieces from around the world, carefully curated to suit every style and occasion.
+            Welcome to <strong>Hour Metric</strong>, your destination for premium timepieces that blend
+            precision, craftsmanship, and style. We are dedicated to bringing you the finest watches
+            from around the world, carefully curated to suit every style and occasion.
           </p>
 
           <p>
             Our collection spans modern designs, classic elegance, and imported luxury pieces.
             Whether you're looking for a sophisticated watch for business, a sporty timepiece
-            for everyday wear, or an elegant accessory for special occasions, we have something
-            for everyone.
+            for everyday wear, or an elegant accessory for special occasions — <strong>Hour Metric</strong> 
+            has something for everyone.
           </p>
 
           <h2 className="about-subtitle">Our Promise</h2>
@@ -29,11 +31,11 @@ const About = () => {
             <li>Competitive pricing on all our products</li>
           </ul>
 
-          <h2 className="about-subtitle">Why Choose Us</h2>
+          <h2 className="about-subtitle">Why Choose Hour Metric</h2>
           <p>
-            We source our watches directly from reliable suppliers, ensuring authenticity and quality.
-            Our team is passionate about timepieces and committed to helping you find the perfect watch
-            that matches your style and needs.
+            At <strong>Hour Metric</strong>, we source our watches directly from reliable suppliers,
+            ensuring authenticity and top-tier quality. Our team is passionate about timepieces
+            and committed to helping you find the perfect watch that matches your personality and lifestyle.
           </p>
 
           <p>
