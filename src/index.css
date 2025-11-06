@@ -2,10 +2,6 @@
   --nav-height: 64px;
 }
 
- .hero-bg {
-  background: linear-gradient(180deg, #0f2233 0%, #0d2a42 60%);
-}
-
  .btn-shadow {
   box-shadow: 0 8px 20px rgba(11, 32, 51, 0.18);
 }
