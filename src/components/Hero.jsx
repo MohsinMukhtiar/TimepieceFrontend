@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import img1 from "../assets/logo (2).png";
- 
+
 const WHATSAPP_NUMBER = "+923012119368";
 
 export default function Hero() {
@@ -9,26 +9,14 @@ export default function Hero() {
     "Hello! I want to enquire about Hour Metric watches."
   )}`;
 
-  // --- Auto background change logic ---
-  const [currentImage, setCurrentImage] = useState(0);
-  const images = [img1];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // change every 5 seconds
-    return () => clearInterval(interval);
-  }, []);
-
-  // Inline styles for the hero background
+  // Static hero background
   const heroStyle = {
     position: "relative",
     height: "100vh",
-    backgroundImage: `url(${images[currentImage]})`,
+    backgroundImage: `url(${img1})`,
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
-    transition: "background-image 1s ease-in-out",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
@@ -62,8 +50,8 @@ export default function Hero() {
           <p className="subheading">Time is your greatest asset.</p>
           <p className="description">
             Discover premium watches that define precision, craftsmanship, and style.
-            Explore our curated collection for Men, Women & Children — where timeless elegance
-            meets modern design.
+            Explore our curated collection for Men, Women & Children — where timeless
+            elegance meets modern design.
           </p>
           <div
             className="hero-buttons"
@@ -140,9 +128,3 @@ export default function Hero() {
     </div>
   );
 }
-
-
-
-
-
-
