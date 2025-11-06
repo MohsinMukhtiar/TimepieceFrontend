@@ -36,8 +36,7 @@ export default function Hero() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <h1>Hour Metric</h1>
-          <p>⌚️ Where Time Meets Style 💎 Luxury Reimagined — Watches & Clothing ✉️ DM to Enquire | 🌍 Worldwide Shipping Soon...</p>
-          <p className="subheading">Time is your greatest asset.</p>
+           <p className="subheading">Time is your greatest asset.</p>
           <p className="description">
             Discover premium watches that define precision, craftsmanship, and style.
             Explore our curated collection for Men, Women & Children — where timeless
@@ -102,5 +101,6 @@ export default function Hero() {
     </div>
   );
 }
+
 
 
