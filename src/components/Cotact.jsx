@@ -7,7 +7,7 @@ export default function Contact() {
   const handleChange = (e) => {
     const { name, value } = e.target;
 
-     if (name === "phone") {
+    if (name === "phone") {
       const numericValue = value.replace(/\D/g, "");  
       setForm({ ...form, [name]: numericValue });
     } else {
@@ -18,12 +18,12 @@ export default function Contact() {
   const handleSend = () => {
     const { name, phone, message } = form;
 
-     if (!name.trim() || !phone.trim()) {
+    if (!name.trim() || !phone.trim()) {
       alert("Please enter both your Name and Phone number before sending.");
       return;
     }
 
-    const text = `Hello!%0AName: ${name}%0APhone: ${phone}%0AMessage: ${
+    const text = `Hello Hour Metric!%0AName: ${name}%0APhone: ${phone}%0AMessage: ${
       message || "No message"
     }`;
     window.open(`https://wa.me/923012119368?text=${text}`, "_blank");
@@ -31,12 +31,13 @@ export default function Contact() {
 
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>Contact Us</h1>
+      <h1 className={styles.title}>Contact Hour Metric</h1>
       <p className={styles.subtitle}>
-        We're here to help! Send us a message via{" "}
+        We’d love to hear from you! Send us a message via{" "}
         <a href="https://wa.me/923012119368" target="_blank" rel="noreferrer">
           WhatsApp
-        </a>
+        </a>{" "}
+        or email us directly.
       </p>
 
       <div className={styles.cardWrapper}>
@@ -81,10 +82,10 @@ export default function Contact() {
 
         <div className={styles.infoCard}>
           <div className={styles.infoBox}>
-            <h3>Get in Touch</h3>
+            <h3>Get in Touch with Hour Metric</h3>
             <p>💬 <strong>WhatsApp:</strong> +92 301 2119368</p>
             <p>📞 <strong>Phone:</strong> +92 301 2119368</p>
-            <p>📧 <strong>Email:</strong> timepiece.pk.com@gmail.com</p>
+            <p>📧 <strong>Email:</strong> hourmetric@gmail.com</p>
           </div>
 
           <div className={styles.hoursBox}>
@@ -92,8 +93,7 @@ export default function Contact() {
             <p>
               We respond to WhatsApp messages throughout the day.
               <br />
-              Send us a message anytime, and we'll get back to you as soon as
-              possible.
+              Send us a message anytime — we’ll get back to you as soon as possible.
             </p>
           </div>
 
