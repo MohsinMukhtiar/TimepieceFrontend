@@ -8,6 +8,7 @@ const WHATSAPP_NUMBER = "+923012119368";
 
 export default function Hero() {
   const [currentImage, setCurrentImage] = useState(0);
+  const [showModal, setShowModal] = useState(false);
   const images = [img1, img2];
 
   // Auto image switch every 3 seconds
@@ -53,6 +54,13 @@ export default function Hero() {
               Contact via WhatsApp
             </a>
           </div>
+
+          {/* NEW CLOTHING COLLECTION BUTTON */}
+          <div className="explore-section">
+            <button className="btn btn-explore" onClick={() => setShowModal(true)}>
+              EXPLORE Hour Metric’s CLOTHING COLLECTION...
+            </button>
+          </div>
         </div>
       </section>
 
@@ -76,6 +84,19 @@ export default function Hero() {
           <p>Dedicated customer support via WhatsApp for your convenience.</p>
         </div>
       </section>
+
+      {/* MODAL */}
+      {showModal && (
+        <div className="modal-overlay" onClick={() => setShowModal(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={() => setShowModal(false)}>
+              &times;
+            </button>
+            <h2 className="coming-soon-text">COMING SOON</h2>
+            <p className="modal-subtext">Our exclusive clothing line launches soon. Stay tuned!</p>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
