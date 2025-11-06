@@ -5,7 +5,7 @@ export default function CTA() {
   return (
     <section
       style={{
-         color: "#cbd5e1",
+         color: "black",
         textAlign: "center",
         padding: "4rem 2rem",
         borderTop: "1px solid rgba(255, 255, 255, 0.1)",
@@ -70,5 +70,6 @@ export default function CTA() {
     </section>
   );
 }
+
 
 
