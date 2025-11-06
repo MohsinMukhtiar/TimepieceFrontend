@@ -7,7 +7,7 @@ const WHATSAPP_NUMBER = "+923012119368";
 
 export default function Hero() {
   const whatsappLink = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(
-    "Hello! I want to enquire about watches"
+    "Hello! I want to enquire about Hour Metric watches."
   )}`;
 
   // --- Auto background change logic ---
@@ -59,13 +59,22 @@ export default function Hero() {
       <section className="hero" style={heroStyle}>
         <div className="hero-overlay" style={overlayStyle} />
         <div className="hero-content" style={contentStyle}>
-          <h1>Premium Watches</h1>
-          <p className="subheading">Modern • Classic • Imported</p>
+          <h1>Hour Metric</h1>
+          <p className="subheading">Time is your greatest asset.</p>
           <p className="description">
-            Explore our curated collection for Men, Women & Children. Timeless elegance meets
-            contemporary design.
+            Discover premium watches that define precision, craftsmanship, and style.
+            Explore our curated collection for Men, Women & Children — where timeless elegance
+            meets modern design.
           </p>
-          <div className="hero-buttons" style={{ marginTop: "1.5rem", display: "flex", gap: "1rem", justifyContent: "center" }}>
+          <div
+            className="hero-buttons"
+            style={{
+              marginTop: "1.5rem",
+              display: "flex",
+              gap: "1rem",
+              justifyContent: "center",
+            }}
+          >
             <Link
               to="/products"
               className="btn btn-primary"
@@ -89,7 +98,7 @@ export default function Hero() {
                 padding: "0.8rem 1.5rem",
                 borderRadius: "4px",
                 border: "2px solid #fff",
-                color: "#464647ff",
+                color: "#f1f1f1",
                 textDecoration: "none",
                 fontWeight: 600,
               }}
@@ -114,22 +123,21 @@ export default function Hero() {
         <div style={{ margin: "1rem 1.5rem", textAlign: "center", maxWidth: "250px" }}>
           <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>⌚</div>
           <h3>Premium Quality</h3>
-          <p>Handpicked watches from trusted manufacturers worldwide</p>
+          <p>Handpicked watches from trusted manufacturers worldwide.</p>
         </div>
 
         <div style={{ margin: "1rem 1.5rem", textAlign: "center", maxWidth: "250px" }}>
           <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🏆</div>
           <h3>Authentic Designs</h3>
-          <p>Every Timepiece25.pk is verified for authenticity and craftsmanship</p>
+          <p>Every Hour Metric watch is verified for authenticity and craftsmanship.</p>
         </div>
 
         <div style={{ margin: "1rem 1.5rem", textAlign: "center", maxWidth: "250px" }}>
           <div style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>🛡️</div>
           <h3>Trusted Service</h3>
-          <p>Dedicated customer support via WhatsApp for your convenience</p>
+          <p>Dedicated customer support via WhatsApp for your convenience.</p>
         </div>
       </section>
     </div>
   );
 }
-
