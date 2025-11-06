@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import img1 from "../assets/logo.png";
+import img1 from "../assets/logo(2).png";
 import img2 from "../assets/cover.png";
 
 const WHATSAPP_NUMBER = "+923012119368";
@@ -141,4 +141,5 @@ export default function Hero() {
     </div>
   );
 }
+
 
