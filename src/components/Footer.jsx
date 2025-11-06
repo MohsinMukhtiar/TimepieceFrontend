@@ -84,11 +84,9 @@ export default function Footer() {
   );
 }
 
-/* 🎨 Updated Styles */
-const styles = {
+ const styles = {
   footer: {
-    backgroundColor: "#f9f9f9",
-    color: "black",
+     color: "black",
     textAlign: "center",
     padding: "40px 20px",
     borderTop: "2px solid #ddd",
@@ -121,3 +119,4 @@ const styles = {
     transition: "transform 0.3s ease, opacity 0.3s ease",
   },
 };
+
