@@ -7,16 +7,15 @@
 .hero {
   position: relative;
   height: 100vh;
+  background: url("../assets/logo (2).png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: #fff;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
+
 
 .hero-overlay {
   position: absolute;
@@ -176,3 +175,4 @@
     font-size: 26px;
   }
 }
+
