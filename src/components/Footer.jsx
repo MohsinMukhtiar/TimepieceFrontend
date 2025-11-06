@@ -28,7 +28,7 @@ export default function Footer() {
         {/* Social Media Icons */}
         <div style={styles.socialContainer}>
           <a
-            href="https://www.facebook.com/hourmetric"
+            href="https://www.facebook.com/share/1BebVVbfNX/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
@@ -38,7 +38,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://www.instagram.com/hourmetric"
+            href="https://www.instagram.com/hourmetric.store.co/?igsh=aDRpd3hsM214OG05"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -51,7 +51,7 @@ export default function Footer() {
   
  
           <a
-            href="https://www.tiktok.com/@hourmetric"
+            href="https://www.tiktok.com/@hourmetric.store.co?_r=1&_t=ZS-91BOSMU0ZDs"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="TikTok"
@@ -100,5 +100,6 @@ export default function Footer() {
     transition: "transform 0.3s ease, opacity 0.3s ease",
   },
 };
+
 
 
