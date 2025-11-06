@@ -1,8 +1,9 @@
 .Hero-root {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: #0b2033;
 }
 
-/* HERO SECTION */
+/* === HERO SECTION === */
 .hero {
   position: relative;
   height: 100vh;
@@ -14,80 +15,166 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+   color: #fff;
 }
+
+ 
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.45);
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  color: white;
-  max-width: 700px;
-  padding: 0 1rem;
+  max-width: 800px;
+  padding: 1rem;
+  margin: 0 auto;
 }
 
 .hero h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
 }
 
 .subheading {
-  font-size: 1.25rem;
-  opacity: 0.85;
+  font-size: 22px;
+  opacity: 0.95;
+  margin-bottom: 18px;
+  font-style: italic;
+  color: #ffb400;
 }
 
 .description {
-  margin: 1rem 0 2rem;
-  line-height: 1.6;
+  font-size: 18px;
   opacity: 0.9;
+  margin-bottom: 32px;
+  line-height: 1.6;
 }
 
-.hero-buttons .btn {
-  margin: 0 0.5rem;
-  padding: 0.8rem 1.5rem;
-  border-radius: 2rem;
-  font-weight: 600;
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* === BUTTONS === */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
 }
 
 .btn-primary {
-  background: #f0b90b;
+  background-color: #ffb400;
   color: #000;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e2a000;
 }
 
 .btn-outline {
-  border: 2px solid #fff;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   color: #fff;
+  background: transparent;
 }
 
 .btn-outline:hover {
-  background: #fff;
-  color: #000;
+  background: rgba(255, 255, 255, 0.1);
 }
 
-/* FEATURES SECTION */
+/* === FEATURES SECTION === */
 .features {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  flex-wrap: wrap;
-  gap: 2rem;
-  padding: 4rem 2rem;
-  background: #111;
-  color: white;
-}
-
-.feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  padding: 80px 20px;
+  background-color: #f8f8f8;
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: center;
-  max-width: 250px;
 }
 
 .feature-icon {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 36px;
+  background-color: rgba(255, 180, 0, 0.15);
+  color: #ffb400;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.feature p {
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* === CALL TO ACTION SECTION (optional) === */
+.cta {
+  background-color: #f5f7fa;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: #0b2033;
+}
+
+.cta p {
+  font-size: 17px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero {
+    height: 90vh;
+    padding: 80px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .subheading {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .features {
+    gap: 28px;
+  }
+
+  .cta h2 {
+    font-size: 26px;
+  }
 }
