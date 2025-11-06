@@ -156,7 +156,8 @@
 }
 
 .btn-explore {
-  background: transparent;
+  background-color: #ffb400;
+
   color: #fff;
   border: 2px solid #f0b90b;
   padding: 0.9rem 2rem;
@@ -274,4 +275,5 @@
     font-size: 26px;
   }
 }
+
 
