@@ -1,4 +1,4 @@
- import React from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 export default function CTA() {
@@ -6,12 +6,18 @@ export default function CTA() {
     <section className="cta">
       <div className="cta-content">
         <h2>Ready to Find Your Perfect Watch?</h2>
-        <p>
-          Browse our collection or reach out directly for personalized assistance.
-         ⌚️ Where Time Meets Style
-💎 Luxury Reimagined — Watches & Clothing
-✉️ DM to Enquire | 🌍 Worldwide Shipping Soon...
+
+        <p className="cta-text">
+          Discover timepieces that go beyond trends — crafted for those who value
+          precision, elegance, and individuality.
+          <br /> <br />
+          ⌚️ <strong>Where Time Meets Style</strong>
+          <br />
+          💎 <strong>Luxury Reimagined — Watches & Clothing</strong>
+          <br />
+          ✉️ <em>DM to Enquire</em> | 🌍 <em>Worldwide Shipping Soon...</em>
         </p>
+
         <Link
           to="/products"
           className="btn btn-primary"
@@ -23,4 +29,3 @@ export default function CTA() {
     </section>
   );
 }
-
